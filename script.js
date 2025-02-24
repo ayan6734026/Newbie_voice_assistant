@@ -75,11 +75,11 @@ function processCommand(command) {
         response.textContent = `Newbie: The current time is ${time}`;
     }else if (command.includes('open youtube')) {
         speak("Opening youtube");
-        response.textContent = `Newbie: openinig youtube`;
+        response.textContent = `Newbie: Opening Youtube`;
         window.open('https://www.youtube.com', '_blank');
     }else if (command.includes('open facebook')) {
         speak("Opening facebook");
-        response.textContent = `Newbie: openinig facebook`;
+        response.textContent = `Newbie: Opening Facebook`;
         window.open('https://www.facebook.com', '_blank');
     } else if (command.includes('search')) {
         const query = command.replace('search', '').trim();
@@ -103,7 +103,7 @@ function processCommand(command) {
         }
     }else if (command.includes('open instagram')) {
         speak("Opening instagram");
-        response.textContent = `Newbie: openinig instagram`;
+        response.textContent = `Newbie: Opening Instagram`;
         window.open('https://www.instagram.com', '_blank');    
     } else if (command.includes('exit')) {
         speak('Goodbye! see you next time!');
